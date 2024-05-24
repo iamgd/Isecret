@@ -7,7 +7,7 @@
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="use-case">
+      <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
         <i class="icon-layout menu-icon"></i>
         <span class="menu-title">Use case</span>
         <i class="menu-arrow"></i>
@@ -20,14 +20,12 @@
               <span class="menu-title">File Encoding</span>
             </a>
           </li>
-          
           <li class="nav-item">
             <a class="nav-link" href="data_encryption.php">
               <i class="ti-lock"></i>
               <span class="menu-title">Data Encryption</span>
             </a>
           </li>
-
           <li class="nav-item">
             <a class="nav-link" href="communication_encryption.php">
               <i class="ti-email"></i>
@@ -40,10 +38,9 @@
     <li class="nav-item">
       <a class="nav-link" href="keys.php">
         <i class="icon-columns menu-icon"></i>
-        <span class="menu-title">Keys</span>              
+        <span class="menu-title">Keys</span>
       </a>
     </li>
-   
     <li class="nav-item">
       <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
         <i class="icon-head menu-icon"></i>
@@ -52,10 +49,31 @@
       </a>
       <div class="collapse" id="auth">
         <ul class="nav flex-column sub-menu">
-          <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
-          <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Register </a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/samples/login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/samples/register.html">Register</a>
+          </li>
         </ul>
       </div>
     </li>
   </ul>
 </nav>
+
+<style>
+/* Remove bullet points and adjust alignment */
+.sub-menu {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.sub-menu .nav-item .nav-link {
+  display: flex;
+  align-items: center;
+}
+
+.sub-menu .nav-item .nav-link i {
+  margin-right: 10px; /* Adjust the space between the icon and the text */
+}
+</style>
